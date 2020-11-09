@@ -17,7 +17,9 @@ The scripts above:
 
 For each day, we determined if a given pixel was green, taken as indicative of algal accumulation in frazil ice. We masked land and ice shelves with the global, self‐consistent, hierarchical, high‐resolution shoreline database and clouds with the internal 1 km cloud algorithm flag. In addition, pixels were masked if Band 3 or 4 surface reflectance was greater than 100%. Finally, we masked pixels if Band 4 was less than 10% to prevent classifying open water pixels as green and because of the lower signal‐to‐noise ratio for pixels with low reflectance values.
 
-We created a Green Index that ranges from -1 to 1: (Band 4 - Band 3) / (Band 4 + Band 3)
+We created a Green Index that ranges from -1 to 1.
+
+Green Index = (Band 4 - Band 3) / (Band 4 + Band 3)
 
 ### green_binary_from_green_index_MOD.pro / green_binary_from_green_index_MYD.pro
 
@@ -34,7 +36,9 @@ We combined Terra and Aqua satellite images for each day (hearafter called **MCD
 For each threshold for February and then March of each year, we counted the number of days that each pixel was classified as green. Similarly, we counted the number of days that each pixel was cloud‐free.
 
 ### month_percent_green_MCD.pro
-Using these monthly counts, we calculated Green Frequency: (number of green days / number of cloud free days) * 100%.
+Using these monthly counts, we calculated Green Frequency.
+
+Green Frequency = (number of green days / number of cloud free days) * 100%.
 
 Next, we classified pixels as Monthly Green if Green Frequency was 20% or greater for a particular month. Pixels were masked out if there were fewer than five cloud‐free days in a given month. 
 
