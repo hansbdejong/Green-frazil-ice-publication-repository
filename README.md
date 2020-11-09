@@ -4,7 +4,7 @@ Code for "Late Summer Frazil Ice‐Associated Algal Blooms around Antarctica"
 
 ## Extracting MODIS satellite data
 
-**MOD_MODIS_unpack.py** and **MYD_MODIS_unpack.py**
+### MOD_MODIS_unpack.py and MYD_MODIS_unpack.py
 
 We used the MODIS Surface Reflectance Daily L2G Global product from both the Terra (**MOD**) and Aqua (**MYD**) satellites (MOD09GA/MYD09GA Version 006). We downloaded all MODIS Surface Reflectance tiles for February and March (2003–2017) that include the Antarctic coast (h14‐24, v15‐16). These tiles cover the majority of the Antarctic continental shelf.
 
@@ -14,11 +14,15 @@ The scripts above:
 
 ## Pixel Classification Algorithm
 
-**GB_MOD_RATIO_algorithm.pro** and **GB_MYD_RATIO_algorithm.pro**
+### GB_MOD_RATIO_algorithm.pro and GB_MYD_RATIO_algorithm.pro 
 
 For each day, we determined if a given pixel was green, taken as indicative of algal accumulation in frazil ice. We masked land and ice shelves with the global, self‐consistent, hierarchical, high‐resolution shoreline database and clouds with the internal 1 km cloud algorithm flag. In addition, pixels were masked if Band 3 or 4 surface reflectance was greater than 100%. Finally, we masked pixels if Band 4 was less than 10% to prevent classifying open water pixels as green and because of the lower signal‐to‐noise ratio for pixels with low reflectance values.
 
-We created a Green Index that ranges from -1 to 1:(Band 4 - Band 3) / (Band 4 + Band 3)
+We created a Green Index that ranges from -1 to 1: (Band 4 - Band 3) / (Band 4 + Band 3)
+
+### green_binary_from_green_index_MOD.pro and green_binary_from_green_index_MYD.pro
+
+We applied the Green Index function to nonmasked pixels for each day. Finally, we classified a pixel as green from algal accumulation within frazil ice if the Green Index was greater or equal to a threshold. We present the results from three thresholds (0.02, 0.04, and 0.06, hereafter called the lower, medium, and higher thresholds). 
 
 
 
