@@ -1,3 +1,6 @@
+;This script calculates a green index for daily satellite imagery that is over the 
+;Southern Ocean for pixels without cloud cover. This script works with the MYD satellite.
+
 pro GB_MYD_RATIO_algorithm
 ;START HERE
 
