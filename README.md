@@ -45,7 +45,13 @@ Percent Years Green = (monthly green count / 15) * 100%
 
 where 15 is the number of years of data that we analyzed (2003–2017).
 
+### green_monthly_count_greater_5.pro
+To examine the location of green colored frazil ice hot spots, we classified a pixel as a hot spot pixel if Percent Years Green was equal or greater than 40%. Finally, we classified a region as a hot spot if it was composed of more than 500 km2 of connected hot spot pixels (using 8‐connected pixel neighborhood criteria).
 
+## Interannual Variability
+
+### number green pixels
+To examine interannual variability, we calculated Green Frazil Ice Extent (area of the Monthly Green pixels) for February and March of each year. We also calculated Green Frazil Ice Extent separately for five geographical sectors (following Arrigo, van Dijken, & Long, 2008; Figure 2).
 
 
 
