@@ -1,5 +1,5 @@
 pro Adder_MCD_green
-    ;add the number of days/month a pixel is green
+    ;adds the number of days/month a pixel is green
     ;change the directory depending on the threshold
     dir_green='F:\BOTH_diff_thresholds\BOTH_green_binary_10\green_binary'
   
