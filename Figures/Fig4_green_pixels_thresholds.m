@@ -42,7 +42,6 @@ ylabel('Area (km^{2})', 'fontsize', 12)
 xlabel('Year', 'fontsize', 12)
 text(2002.5, 225000, '(a) Higher Threshold', 'fontsize', 12)
 
-
 subplot(2,2,2)
 bar_handle=bar(year, green_total_10_horzcat, 1)
 set(bar_handle(1),'FaceColor',[0.95,0.95,0.95])
@@ -57,8 +56,6 @@ xlabel('Year', 'fontsize', 12)
 text(2002.5, 540000, '(b) Medium Threshold', 'fontsize', 12)
 legend({'Feb', 'Mar'}, 'Location', 'northeast', 'Fontsize', 15)
 
-
-
 subplot(2,2,3.5)
 bar_handle=bar(year, green_total_5_horzcat, 1)
 set(bar_handle(1),'FaceColor',[0.95,0.95,0.95])
@@ -71,9 +68,3 @@ set(gca,'yticklabel',sprintf('%d |',n'));
 ylabel('Area (km^{2})', 'fontsize', 12)
 xlabel('Year', 'fontsize', 12)
 text(2002.5, 1800000, '(c) Lower Threshold', 'fontsize', 12)
-
-
-
-
-
-
