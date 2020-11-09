@@ -34,7 +34,8 @@ subplot(2,2,1)
 bar_handle=bar(year, green_total_15_horzcat, 1)
 set(bar_handle(1),'FaceColor',[0.95,0.95,0.95])
 set(bar_handle(2),'FaceColor',[0.6,0.6,0.6])
-str = {'''03'; '''04'; '''05'; '''06'; '''07'; '''08'; '''09'; '''10'; '''11'; '''12'; '''13'; '''14'; '''15'; '''16'; '''17';};
+str = {'''03'; '''04'; '''05'; '''06'; '''07'; '''08'; '''09'; '''10'; 
+    '''11'; '''12'; '''13'; '''14'; '''15'; '''16'; '''17';};
 set(gca, 'XTickLabel',str)
 n=get(gca,'Ytick');
 set(gca,'yticklabel',sprintf('%d |',n'));
