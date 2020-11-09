@@ -14,7 +14,7 @@
 ;   the number of days a pixel was green / month / year
 ;   green.MCD_year_month.tif
 
-pro month_perc_green_MCD
+pro month_percent_green_MCD
   
     CD, 'E:\BOTH\monthly'
     cloud_dir=file_search('1.cloud*')
