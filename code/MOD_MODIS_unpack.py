@@ -1,6 +1,9 @@
 #AA_MODIS_unpack
 #3/2/2017
 #Evan Lyons and Hans Bjorn DeJong
+
+#This script unpacks satellite data for each tile, extracting only bands 1, 3, 4, and state
+#This script then stitches the tiles together, reprojects them, and prints out a combined GeoTIFF file. 
 import os
 working_dir = r"D:\MOD"
 output_dir = r"C:\Users\hdejong\Desktop\Antarctica_output"
