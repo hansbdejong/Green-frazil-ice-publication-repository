@@ -1,7 +1,7 @@
 ;outputs number of pixels/month/year that are green for all of Antarctica as well as for 5 regions of Antarctica
 ;pixels only considered if they are clear for 5 days or greater for that month
 
-pro number_of_pixels
+pro number_green_pixels
     
     ;output filename, change for different thresholds
     filename='number_of_green_pixels_15.csv'                                         
