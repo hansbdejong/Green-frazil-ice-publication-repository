@@ -4,29 +4,29 @@
 pro number_green_pixels
     
     ;output filename, change for different thresholds
-    filename='number_of_green_pixels_15.csv'                                         
+    filename = 'number_of_green_pixels_15.csv'                                         
     
     CD, 'C:\Users\hdejong\Desktop\region_shapefiles'
     
     ;masks for each region, 1 if part of the region, 0 if not part of that region
-    Ross_Sea=read_tiff('RS_mask.tif')
-    Ross_Sea=Ross_Sea(1:14681,1:13377)
+    Ross_Sea = read_tiff('RS_mask.tif')
+    Ross_Sea = Ross_Sea(1:14681,1:13377)
 
-    S_Indian=read_tiff('S_Indian_mask.tif')
-    S_Indian=S_Indian(1:14681,1:13377)
+    S_Indian = read_tiff('S_Indian_mask.tif')
+    S_Indian = S_Indian(1:14681,1:13377)
 
-    SW_Pac=read_tiff('SW_Pac_mask.tif')
-    SW_Pac=SW_Pac(1:14681,1:13377)
+    SW_Pac = read_tiff('SW_Pac_mask.tif')
+    SW_Pac = SW_Pac(1:14681,1:13377)
 
-    Weddell=read_tiff('Weddell_mask.tif')
-    Weddell=Weddell(1:14681,1:13377)
+    Weddell = read_tiff('Weddell_mask.tif')
+    Weddell = Weddell(1:14681,1:13377)
 
-    Amundsen=read_tiff('Amundsen_mask.tif')
-    Amundsen=Amundsen(1:14681,1:13377)
+    Amundsen = read_tiff('Amundsen_mask.tif')
+    Amundsen = Amundsen(1:14681,1:13377)
 
     CD, 'E:\BOTH\monthly'                            
 
-    dir=file_search('*perc_green_bin*')
+    dir = file_search('*perc_green_bin*')
     length = size(dir)
     length = length(1)
     output = make_array(8,30, /long, value=1)
@@ -48,14 +48,14 @@ pro number_green_pixels
         green_Indian_S = green_total*S_Indian
       
         ;adds up the total number of green pixels / month / year 
-        output(0,i)=long(year)
-        output(1,i)=long(month)
-        output(2,i)=long(total(green_total))
-        output(3,i)=long(total(green_Weddell))
-        output(4,i)=long(total(green_Amundsen))
-        output(5,i)=long(total(green_Ross_Sea))
-        output(6,i)=long(total(green_SW_Pac))
-        output(7,i)=long(total(green_Indian_S))
+        output(0,i) = long(year)
+        output(1,i) = long(month)
+        output(2,i) = long(total(green_total))
+        output(3,i) = long(total(green_Weddell))
+        output(4,i) = long(total(green_Amundsen))
+        output(5,i) = long(total(green_Ross_Sea))
+        output(6,i) = long(total(green_SW_Pac))
+        output(7,i) = long(total(green_Indian_S))
     endfor
     write_csv, filename, output
 end
