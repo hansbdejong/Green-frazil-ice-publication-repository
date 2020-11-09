@@ -1,1 +1,2 @@
-*.idl liguist-detectable=true
+*.idl linguist-detectable=true
+*.prolog linguist-detectable=false
