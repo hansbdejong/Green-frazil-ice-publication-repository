@@ -50,7 +50,7 @@ To examine the location of green colored frazil ice hot spots, we classified a p
 
 ## Interannual Variability
 
-### number green pixels
+### number_green_pixels.pro
 To examine interannual variability, we calculated Green Frazil Ice Extent (area of the Monthly Green pixels) for February and March of each year. We also calculated Green Frazil Ice Extent separately for five geographical sectors (following Arrigo, van Dijken, & Long, 2008; Figure 2).
 
 
