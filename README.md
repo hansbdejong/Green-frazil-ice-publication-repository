@@ -1,8 +1,11 @@
 # Green-frazil-ice-publication-repository
 Code from the publication: DeJong, Hans B., Robert B. Dunbar, and Evan A. Lyons. "Late Summer Frazil Ice‐Associated Algal Blooms around Antarctica." Geophysical Research Letters 45.2 (2018): 826-833. (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GL075472)
 
-## Extracting MODIS satellite data
-![Drag Racing](Figures/Fig1_Landsat.png)
+## Figures
+![](fig1.png)
+![](fig2.png)
+![](fig3.png)
+![](fig4.png)
 
 ## Extracting MODIS satellite data
 ### MOD_MODIS_unpack.py / MYD_MODIS_unpack.py
