@@ -2,6 +2,9 @@
 Code from the publication: DeJong, Hans B., Robert B. Dunbar, and Evan A. Lyons. "Late Summer Frazil Ice‐Associated Algal Blooms around Antarctica." Geophysical Research Letters 45.2 (2018): 826-833. (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GL075472)
 
 ## Extracting MODIS satellite data
+![Drag Racing](Figures/Fig1_Landsat.png)
+
+## Extracting MODIS satellite data
 ### MOD_MODIS_unpack.py / MYD_MODIS_unpack.py
 
 We used the MODIS Surface Reflectance Daily L2G Global product from both the Terra (**MOD**) and Aqua (**MYD**) satellites (MOD09GA/MYD09GA Version 006). We downloaded all MODIS Surface Reflectance tiles for February and March (2003–2017) that include the Antarctic coast (h14‐24, v15‐16). These tiles cover the majority of the Antarctic continental shelf.
