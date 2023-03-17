@@ -6,15 +6,15 @@ Code from the publication: DeJong, Hans B., Robert B. Dunbar, and Evan A. Lyons.
 
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig1.png" width=70% height=70%>
 
-**Figure 2.*
+**Figure 2.**
 
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig2.png" width=70% height=70%>
 
-**Figure 3.*
+**Figure 3.**
 
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig3.png" width=70% height=70%>
 
-**Figure 4.*
+**Figure 4.**
 
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig4.png" width=70% height=70%>
 
