@@ -3,19 +3,22 @@ Code from the publication: DeJong, Hans B., Robert B. Dunbar, and Evan A. Lyons.
 
 ## Figures
 **Figure 1.**
-
+<p align="center">
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig1.png" width=70% height=70%>
+</p>
 
 **Figure 2.**
-
+<p align="center">
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig2.png" width=70% height=70%>
+</p>
 
 **Figure 3.**
-
+<p align="center">
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig3.png" width=70% height=70%>
+</p>
 
 **Figure 4.**
-
+<p align="center">
 <img src="https://github.com/hansbdejong/Green-frazil-ice-publication-repository/blob/main/readMeFigures/fig4.png" width=70% height=70%>
 
 ## Extracting MODIS satellite data
